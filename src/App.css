@@ -1,0 +1,122 @@
+/* Gaya dasar tubuh halaman */
+body {
+  line-height: 1;
+}
+.App {
+  text-align: center;
+}
+
+/* Kontainer utama */
+.home-container {
+  position: relative;
+  padding-bottom: 300px; /* Tambahkan padding untuk mencegah tumpang tindih */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Kontainer formulir */
+.form-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Pastikan formulir berada di atas konten lain */
+  margin-bottom: 20px; /* Tambahkan margin untuk memisahkan dari kartu perjalanan */
+}
+
+.form-container form {
+  flex-basis: 400px;
+}
+.form-container .form-content {
+  padding: 20px;
+  border: 2px solid green;
+  background-color: #ffffff88;
+}
+
+/* Hapus gaya terkait slider */
+/*
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+  max-height: 915px;
+}
+.slick-prev {
+  left: 80px;
+  z-index: 100;
+}
+.slick-next {
+  right: 80px;
+  z-index: 100;
+}
+.slick-prev:before, 
+.slick-next:before {
+  font-size: 35px;
+}
+*/
+
+/* Gaya kontrol kustom */
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #157d2d;
+  background-color: #28a745;
+}
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+  border-color: #157d2d;
+  box-shadow: 0 0 0 0.2rem #28a74561;
+}
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+  background-color: #28a74547;
+  border-color: #28a74547;
+}
+.custom-control-label::before,
+.custom-control-label::after {
+  top: 0.1rem;
+}
+
+/* Gaya kontrol formulir */
+.form-control {
+  border-radius: 0px;
+  border: 1px solid #157d2d;
+}
+.form-control:focus {
+  border-color: #157d2d;
+  box-shadow: 0 0 0 0.2rem #28a74561;
+}
+
+/* Gaya tombol */
+#trip_plan_btn {
+  border-radius: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 2px solid #fafafa;
+}
+
+/* Kontainer kartu perjalanan */
+.trip-cards-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  z-index: 0; /* Pastikan kartu perjalanan berada di bawah formulir */
+}
+
+/* Gaya kartu perjalanan */
+.trip-card {
+  border: 1px solid #157d2d;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  background-color: #ffffff88;
+  width: 300px;
+  text-align: left;
+}
+
+/* Gaya kontainer collage */
+.collage-container {
+  /* Menggunakan kelas grid Tailwind di JSX, gaya tambahan dapat ditambahkan di sini jika diperlukan */
+}
+
+/* Tambahkan gaya kustom lain jika diperlukan */
